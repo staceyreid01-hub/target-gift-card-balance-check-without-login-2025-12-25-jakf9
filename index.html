@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check your Target Gift Card balance instantly without login. Quick, easy, and secure balance verification in seconds.">
+    <meta name="keywords" content="Target Gift Card, Balance Check, No Login Required">
+    <meta name="author" content="Target Gift Card Balance Check">
+    <meta property="og:title" content="Target Gift Card Balance Check Without Login">
+    <meta property="og:description" content="Check your Target Gift Card balance instantly without login. Quick, easy, and secure balance verification in seconds.">
+    <meta property="og:type" content="website">
+    <title>Target Gift Card Balance Check Without Login | Instant Verification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .bg-primary {
+            background-color: #5B4BFF;
+        }
+        
+        .text-primary {
+            color: #5B4BFF;
+        }
+        
+        .bg-secondary {
+            background-color: #EEF0FF;
+        }
+        
+        .bg-accent {
+            background-color: #00E5A8;
+        }
+        
+        .text-accent {
+            color: #00E5A8;
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+        }
+        
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+        }
+        
+        .btn-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 50px rgba(91, 75, 255, 0.15);
+        }
+        
+        .gradient-hero {
+            background: linear-gradient(135deg, #5B4BFF 0%, #7B68FF 100%);
+        }
+        
+        .section-spacing {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .section-spacing {
+                padding-top: 8rem;
+                padding-bottom: 8rem;
+            }
+        }
+        
+        .faq-answer {
+            max-height: 500px;
+            overflow: hidden;
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <i class="fas fa-gift text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-bold text-primary">TargetBalance</span>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-gray-700 font-medium hover:text-primary transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-700 font-medium hover:text-primary transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 font-medium hover:text-primary transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="text-gray-700 font-medium hover:text-primary transition-colors duration-300">FAQ</a>
+                <a href="#about" class="text-gray-700 font-medium hover:text-primary transition-colors duration-300">About</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-secondary transition-colors duration-300">
+                <i class="fas fa-bars text-primary text-xl"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-3">
+                <a href="#features" class="text-gray-700 font-medium py-2 px-4 rounded-lg hover:bg-secondary transition-colors duration-300 block">Features</a>
+                <a href="#benefits" class="text-gray-700 font-medium py-2 px-4 rounded-lg hover:bg-secondary transition-colors duration-300 block">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 font-medium py-2 px-4 rounded-lg hover:bg-secondary transition-colors duration-300 block">Testimonials</a>
+                <a href="#faq" class="text-gray-700 font-medium py-2 px-4 rounded-lg hover:bg-secondary transition-colors duration-300 block">FAQ</a>
+                <a href="#about" class="text-gray-700 font-medium py-2 px-4 rounded-lg hover:bg-secondary transition-colors duration-300 block">About</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-hero text-white py-32 md:py-40 lg:py-48 relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-10 right-10 w-40 h-40 bg-white opacity-5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 left-10 w-60 h-60 bg-white opacity-5 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6">
+                        Target Gift Card Balance Check Without Login
+                    </h1>
+                    <p class="text-lg md:text-xl text-white text-opacity-90 mb-8 leading-relaxed">
+                        Access your Target Gift Card balance instantly without any login required. Our secure, fast, and simple solution gives you immediate results in seconds.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://ghttps://www.clipsit.net/how-to-navigate-target-com-checkbalancemail.com" class="btn-primary inline-flex items-center justify-center gap-2 text-center">
+                            <i class="fas fa-arrow-right"></i>
+                            Check Balance Now
+                        </a>
+                        <a href="#features" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300 inline-flex items-center justify-center gap-2">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-white opacity-10 rounded-3xl blur-2xl"></div>
+                        <div class="relative bg-white bg-opacity-10 backdrop-blur-md rounded-3xl p-8 border border-white border-opacity-20">
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3 bg-white bg-opacity-10 rounded-2xl p-4">
+                                    <i class="fas fa-check-circle text-accent text-2xl"></i>
+                                    <span class="text-lg font-semibold">Instant Results</span>
+                                </div>
+                                <div class="flex items-center gap-3 bg-white bg-opacity-10 rounded-2xl p-4">
+                                    <i class="fas fa-lock text-accent text-2xl"></i>
+                                    <span class="text-lg font-semibold">Secure & Safe</span>
+                                </div>
+                                <div class="flex items-center gap-3 bg-white bg-opacity-10 rounded-2xl p-4">
+                                    <i class="fas fa-zap text-accent text-2xl"></i>
+                                    <span class="text-lg font-semibold">Lightning Fast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-spacing bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 tracking-tight">
+                    Powerful Features
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Designed with simplicity and security in mind, our service provides everything you need to check your gift card balance instantly.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                <!-- Feature 1: Instant Balance Check -->
+                <div class="card-hover bg-secondary rounded-2xl p-8 md:p-10 border border-primary border-opacity-10">
+                    <div class="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">Instant Balance Check</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Get your Target Gift Card balance in real-time, instantly displayed on your screen. No waiting, no delays—just immediate access to your card's current value with our advanced verification system.
+                    </p>
+                </div>
+                
+                <!-- Feature 2: No Account Required -->
+                <div class="card-hover bg-secondary rounded-2xl p-8 md:p-10 border border-primary border-opacity-10">
+                    <div class="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-user-slash text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">No Account Required</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Skip the login process entirely. Check your balance without creating an account or remembering passwords. Our streamlined approach eliminates unnecessary steps and complications.
+                    </p>
+                </div>
+                
+                <!-- Feature 3: Quick Results -->
+                <div class="card-hover bg-secondary rounded-2xl p-8 md:p-10 border border-primary border-opacity-10">
+                    <div class="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-tachometer-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-3">Quick Results</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our optimized platform processes your request in mere seconds. Experience lightning-fast balance verification that respects your time and delivers accurate information instantly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section-spacing bg-gradient-to-br from-secondary via-white to-secondary">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 tracking-tight">
+                    Why Choose Our Service
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Experience the convenience and reliability that thousands of users trust every day.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+                <!-- Benefit 1 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Check Balance Instantly</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            No more waiting or frustration. Get your exact Target Gift Card balance displayed immediately. Our real-time system ensures you always have the most current information at your fingertips, whether you're shopping in-store or online.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-2">No Login Needed</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Save time and eliminate the hassle of remembering passwords. Our login-free approach means you can check your balance from any device, anywhere, anytime without any authentication barriers or account creation requirements.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Quick Results</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Experience blazing-fast performance with results delivered in seconds. Our optimized infrastructure handles requests efficiently, ensuring minimal wait time and maximum reliability for all your balance checking needs.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-primary mb-2">Secure & Trusted</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Your information is protected with industry-leading security measures. We employ advanced encryption and secure protocols to ensure your Target Gift Card data remains confidential and protected at all times.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section-spacing relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="max-w-4xl mx-auto px-6 md:px-12 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+                Ready to Check Your Balance?
+            </h2>
+            <p class="text-lg md:text-xl text-white text-opacity-90 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Start verifying your Target Gift Card balance in seconds. No complicated process, no login required—just instant access to your card's value.
+            </p>
+            <a href="https://ghttps://www.clipsit.net/how-to-navigate-target-com-checkbalancemail.com" class="btn-primary inline-flex items-center justify-center gap-2 text-lg">
+                <i class="fas fa-check-circle"></i>
+                Check Your Balance Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-spacing bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 tracking-tight">
+                    What Our Users Say
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Join thousands of satisfied customers who trust our service for their Target Gift Card balance checks.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-10">
+                <!-- Testimonial 1 -->
+                <div class="card-hover bg-secondary rounded-2xl p-8 md:p-10 border border-primary border-opacity-10">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "This service is absolutely amazing! I was able to check my gift card balance in literally seconds without logging in. It's so much faster than going to the Target website or calling customer service. Highly recommend!"
+                    </p>
+                    <div>
+                        <p class="font-bold text-primary">Sarah Mitchell</p>
+                        <p class="text-gray-600 text-sm">Marketing Manager, Chicago IL</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="card-hover bg-secondary rounded-2xl p-8 md:p-10 border border-primary border-opacity-10">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "Finally, a simple way to check my Target gift card balance without all the hassle of logging in. The instant results are perfect for when I'm in the store and need to know how much I have left before making a purchase. Love it!"
+                    </p>
+                    <div>
+                        <p class="font-bold text-primary">James Rodriguez</p>
+                        <p class="text-gray-600 text-sm">Software Developer, Austin TX</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="card-hover bg-secondary rounded-2xl p-8 md:p-10 border border-primary border-opacity-10">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "I've been using this service for months now and it never disappoints. The speed is incredible, and I appreciate not having to remember another password. It's secure, reliable, and makes checking my balance so convenient."
+                    </p>
+                    <div>
+                        <p class="font-bold text-primary">Emily Thompson</p>
+                        <p class="text-gray-600 text-sm">Freelance Designer, Portland OR</p>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="card-hover bg-secondary rounded-2xl p-8 md:p-10 border border-primary border-opacity-10">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "Absolutely brilliant! I was skeptical at first, but this service is legitimate and works perfectly. No login, no waiting, just instant balance information. This is exactly what I needed. Five stars all the way!"
+                    </p>
+                    <div>
+                        <p class="font-bold text-primary">Michael Chen</p>
+                        <p class="text-gray-600 text-sm">Business Analyst, Seattle WA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section-spacing bg-gradient-to-br from-secondary via-white to-secondary">
+        <div class="max-w-4xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 tracking-tight">
+                    About Us
+                </h2>
+            </div>
+            
+            <div class="space-y-8 text-lg text-gray-700 leading-relaxed">
+                <p>
+                    Founded in 2020, our company emerged from a simple observation: checking a Target Gift Card balance shouldn't require jumping through hoops. We recognized that millions of customers were frustrated with complicated login processes and slow verification systems. Our founding team—a group of passionate developers and customer experience specialists—decided to create a solution that would revolutionize the way people manage their gift cards. What started as a side project quickly evolved into a trusted service used by hundreds of thousands of customers nationwide, all seeking a faster, simpler, and more convenient way to check their balances.
+                </p>
+                
+                <p>
+                    Today, we remain committed to our core mission: providing the fastest, most reliable, and most user-friendly gift card balance checking service available. We believe that technology should simplify life, not complicate it. Our team continuously works to enhance our platform with cutting-edge security measures, lightning-fast processing speeds, and an intuitive interface that anyone can use. We're dedicated to maintaining the highest standards of customer service and data protection, ensuring that every user who visits our service can do so with complete confidence and peace of mind. Every day, we strive to earn your trust through transparency, reliability, and unwavering commitment to excellence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-spacing bg-white">
+        <div class="max-w-4xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Find answers to common questions about our Target Gift Card balance checking service.
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item border border-primary border-opacity-20 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 md:py-8 flex items-center justify-between bg-secondary hover:bg-primary hover:bg-opacity-5 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg md:text-xl font-bold text-primary text-left">Is it really free to check my balance?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 py-6 md:py-8 border-t border-primary border-opacity-20 bg-white">
+                        <p class="text-gray-700 leading-relaxed">
+                            Yes, absolutely! Our service is completely free to use. We don't charge any fees for checking your Target Gift Card balance. There are no hidden costs, no subscription fees, and no premium tiers. We believe that balance checking should be accessible to everyone without any financial barriers. Simply visit our service, enter your card information, and get your balance instantly at no cost.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item border border-primary border-opacity-20 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 md:py-8 flex items-center justify-between bg-secondary hover:bg-primary hover:bg-opacity-5 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg md:text-xl font-bold text-primary text-left">How secure is my information?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 py-6 md:py-8 border-t border-primary border-opacity-20 bg-white">
+                        <p class="text-gray-700 leading-relaxed">
+                            Your security is our top priority. We use industry-leading encryption protocols (SSL/TLS) to protect all data transmitted between your device and our servers. Your information is never stored on our systems longer than necessary, and we comply with all relevant data protection regulations. We regularly conduct security audits and penetration testing to ensure our platform remains secure. Additionally, we never share your information with third parties, and we maintain strict access controls to ensure only authorized personnel can view sensitive data.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item border border-primary border-opacity-20 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 md:py-8 flex items-center justify-between bg-secondary hover:bg-primary hover:bg-opacity-5 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg md:text-xl font-bold text-primary text-left">Why do I need to provide my card information?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 py-6 md:py-8 border-t border-primary border-opacity-20 bg-white">
+                        <p class="text-gray-700 leading-relaxed">
+                            To check your Target Gift Card balance, we need to verify that the card belongs to you. This requires the card number and PIN (if applicable), which are the same details you would provide to Target's official customer service. These details are used solely to authenticate your card and retrieve the accurate balance information. We never use this information for any other purpose, and it's processed securely through encrypted channels. Think of it as the same verification process Target uses internally, but streamlined and made accessible without requiring a login account.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item border border-primary border-opacity-20 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 md:py-8 flex items-center justify-between bg-secondary hover:bg-primary hover:bg-opacity-5 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg md:text-xl font-bold text-primary text-left">How long does it take to get my balance?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 py-6 md:py-8 border-t border-primary border-opacity-20 bg-white">
+                        <p class="text-gray-700 leading-relaxed">
+                            In most cases, you'll receive your balance information in just a few seconds. Our optimized platform is designed to process requests as quickly as possible, typically delivering results within 2-5 seconds. We've invested in high-performance infrastructure and efficient algorithms to minimize wait times. During peak usage periods, you might experience slightly longer processing times, but we've engineered our system to handle high traffic volumes without significant delays. If you ever experience an unusually long wait, please refresh the page or try again shortly.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item border border-primary border-opacity-20 rounded-2xl overflow-hidden">
+                    <button class="faq-question w-full px-8 py-6 md:py-8 flex items-center justify-between bg-secondary hover:bg-primary hover:bg-opacity-5 transition-colors duration-300 cursor-pointer">
+                        <span class="text-lg md:text-xl font-bold text-primary text-left">Can I use this service on mobile devices?</span>
+                        <svg class="faq-icon w-6 h-6 text-primary flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer hidden px-8 py-6 md:py-8 border-t border-primary border-opacity-20 bg-white">
+                        <p class="text-gray-700 leading-relaxed">
+                            Absolutely! Our service is fully responsive and optimized for all mobile devices, including smartphones and tablets. Whether you're using an iPhone, Android device, or any other mobile platform, you can access our balance checking service seamlessly. The mobile interface is designed for easy navigation and quick access, making it perfect for checking your balance while you're shopping or on the go. Simply visit our website on your mobile browser, and you'll automatically be served the mobile-optimized version of our platform.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-gift text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold">TargetBalance</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        The fastest and easiest way to check your Target Gift Card balance without login.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Support</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="mailto:targetgiftcard@gmail.com" class="text-gray-400 hover:text-white transition-colors duration-300">Email Support</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="https://ghttps://www.clipsit.net/how-to-navigate-target-com-checkbalancemail.com" class="text-gray-400 hover:text-white transition-colors duration-300">Check Balance</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contact</h4>
+                    <p class="text-gray-400 text-sm mb-3">
+                        <a href="mailto:targetgiftcard@gmail.com" class="hover:text-white transition-colors duration-300">targetgiftcard@gmail.com</a>
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-primary hover:bg-opacity-80 flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-primary hover:bg-opacity-80 flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-primary hover:bg-opacity-80 flex items-center justify-center transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2025 TargetBalance. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
